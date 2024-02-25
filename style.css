@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+
+.loadings span{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+    animation: 1s ease-in-out myAnimation infinite;
+
+}
+
+
+.loadings span:nth-child(1){
+
+    animation: 1s ease-in-out myAnimation infinite;
+}
+
+.loadings span:nth-child(2){
+
+    animation: 1s ease-in-out 0.333s myAnimation infinite;
+}
+
+.loadings span:nth-child(3){
+
+    animation: 1s ease-in-out 0.667s myAnimation infinite;
+}
+
+
+
+
+@keyframes myAnimation{
+
+    0%{
+        transform: translateY(0) scale(1);
+    }
+
+    50%{
+        transform: translateY(-20px) scale(1.3);
+    }
+
+    100%{
+        transform: translateY(0px) scale(1);
+    }
+}
+
+
